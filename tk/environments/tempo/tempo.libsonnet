@@ -49,6 +49,15 @@ minio + tempo_microservices + tempo_scaling + tempo_tracing + {
         },
       },
     },
+
+    metrics_generator: {
+      remote_write: {
+        enabled: true,
+        client: {
+          url: 'http://prometheus:9090/prometheus/api/v1/write',
+        },
+      },
+    },
   },
 
   local k = import 'ksonnet-util/kausal.libsonnet',

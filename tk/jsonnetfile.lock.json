@@ -44,6 +44,16 @@
     {
       "source": {
         "git": {
+          "remote": "https://github.com/grafana/jsonnet-libs.git",
+          "subdir": "prometheus"
+        }
+      },
+      "version": "264a5c2078c5930af57fe2d107eff83ab63553af",
+      "sum": "1/gaGD2Wu6ZML+sXTEKo5zZC/VyBgS30yznbprRyy84="
+    },
+    {
+      "source": {
+        "git": {
           "remote": "https://github.com/ksonnet/ksonnet-lib.git",
           "subdir": "ksonnet.beta.4"
         }
