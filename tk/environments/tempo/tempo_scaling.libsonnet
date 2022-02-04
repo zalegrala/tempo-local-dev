@@ -20,10 +20,6 @@
       replicas: 3,
       resources: resources_small,
     },
-    metrics_generator+: {
-      replicas: 1,
-      resources: resources_small,
-    },
     compactor+: {
       replicas: 1,
       resources: resources_small,
@@ -41,7 +37,7 @@
       resources: resources_small,
     },
     vulture+: {
-      replicas: 1,
+      replicas: 0,
       resources: resources_small,
     },
   },

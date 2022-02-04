@@ -8,8 +8,8 @@
           "subdir": "production/tanka/grafana-agent"
         }
       },
-      "version": "2a74dcb478081d0c5e6804db322d3521aec3a049",
-      "sum": "Pza++MPlWTvRgN8yHvRhr6EQL1QNrWdRIPwRGKtC1bo="
+      "version": "25b8896ddf5d314fbf1d7f04fc48c9d7e39c7dc0",
+      "sum": "iMEEgdcjC8BQ2ljKDh+poBU9gDRtu1hh7iuOfycFSk8="
     },
     {
       "source": {
@@ -18,7 +18,7 @@
           "subdir": "grafana"
         }
       },
-      "version": "264a5c2078c5930af57fe2d107eff83ab63553af",
+      "version": "5a128df878434da37969b811e99bb9cd0a3779e3",
       "sum": "7rANfqY8ERvoABHbwoGsdGpUeHxxYCSVOcM4Eky4QtQ="
     },
     {
@@ -28,7 +28,7 @@
           "subdir": "ksonnet-util"
         }
       },
-      "version": "264a5c2078c5930af57fe2d107eff83ab63553af",
+      "version": "5a128df878434da37969b811e99bb9cd0a3779e3",
       "sum": "JDsc/bUs5Yv1RkGKcm0hMteqCKZqemxA3qP6eiEATr8="
     },
     {
@@ -38,7 +38,7 @@
           "subdir": "memcached"
         }
       },
-      "version": "264a5c2078c5930af57fe2d107eff83ab63553af",
+      "version": "5a128df878434da37969b811e99bb9cd0a3779e3",
       "sum": "dTOeEux3t9bYSqP2L/uCuLo/wUDpCKH4w+4OD9fePUk="
     },
     {
@@ -48,7 +48,7 @@
           "subdir": "prometheus"
         }
       },
-      "version": "264a5c2078c5930af57fe2d107eff83ab63553af",
+      "version": "5a128df878434da37969b811e99bb9cd0a3779e3",
       "sum": "1/gaGD2Wu6ZML+sXTEKo5zZC/VyBgS30yznbprRyy84="
     },
     {

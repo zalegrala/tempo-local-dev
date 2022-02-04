@@ -1,9 +1,10 @@
 local tempo_microservices = import 'microservices/tempo.libsonnet';
 local minio = import 'minio/minio.libsonnet';
+local tempo_metrics_generator = import 'tempo_metrics_generator.libsonnet';
 local tempo_scaling = import 'tempo_scaling.libsonnet';
 local tempo_tracing = import 'tempo_tracing.libsonnet';
 
-minio + tempo_microservices + tempo_scaling + tempo_tracing + {
+minio + tempo_microservices + tempo_scaling + tempo_tracing + tempo_metrics_generator + {
 
   _config+:: {
     search_enabled: true,
@@ -30,6 +31,8 @@ minio + tempo_microservices + tempo_scaling + tempo_tracing + {
 
     backend: 's3',
     bucket: 'tempo',
+
+    overrides: import 'tempo_overrides.libsonnet',
   },
 
   tempo_config+:: {
@@ -46,15 +49,6 @@ minio + tempo_microservices + tempo_scaling + tempo_tracing + {
           access_key: 'tempo',
           secret_key: 'supersecret',
           insecure: true,
-        },
-      },
-    },
-
-    metrics_generator: {
-      remote_write: {
-        enabled: true,
-        client: {
-          url: 'http://prometheus:9090/prometheus/api/v1/write',
         },
       },
     },
