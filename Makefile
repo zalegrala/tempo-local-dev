@@ -1,4 +1,14 @@
 run: create-cluster tilt
+stop: stop-cluster
+start: start-cluster
+
+.PHONY: start-cluster
+start-cluster:
+	k3d cluster start local-dev
+
+.PHONY: stop-cluster
+stop-cluster:
+	k3d cluster stop local-dev
 
 .PHONY: create-cluster
 create-cluster:
