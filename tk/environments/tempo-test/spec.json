@@ -1,0 +1,13 @@
+{
+  "apiVersion": "tanka.dev/v1alpha1",
+  "kind": "Environment",
+  "metadata": {
+    "name": "environments/tempo-test"
+  },
+  "spec": {
+    "namespace": "tempo-test",
+    "apiServer": "https://k.znet:6443",
+    "resourceDefaults": {},
+    "expectVersions": {}
+  }
+}
